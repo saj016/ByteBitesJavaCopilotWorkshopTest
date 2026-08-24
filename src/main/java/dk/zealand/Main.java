@@ -11,6 +11,12 @@ public class Main {
             "Vegansk bowl"
     };
 
+    private static final int[] PRICES = {
+            59,
+            35,
+            65
+    };
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
@@ -48,7 +54,7 @@ public class Main {
         System.out.println("Retter:");
 
         for (int i = 0; i < DISHES.length; i++) {
-            System.out.printf("%d. %s%n", i + 1, DISHES[i]);
+            System.out.printf("%d. %s - %d kr.%n", i + 1, DISHES[i], PRICES[i]);
         }
     }
 }
